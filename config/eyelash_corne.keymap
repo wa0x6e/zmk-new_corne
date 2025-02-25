@@ -53,6 +53,45 @@
         tap-ms = <30>;
     };
 
+    macros {
+        back_word: back_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        forward_word: forward_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        line_start: line_start {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+        line_end: line_end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
