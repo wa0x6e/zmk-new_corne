@@ -15,7 +15,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - '&BHM LALT S'
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: LGUI}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
