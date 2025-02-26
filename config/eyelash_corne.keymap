@@ -40,6 +40,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <30 31>;
+            bindings = <&kp LGUI>, <&kp X>;
+        };
+    };
+
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -54,7 +63,7 @@
     };
 
     macros {
-        back_word: back_word {
+        word_back: back_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -63,7 +72,7 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-        forward_word: forward_word {
+        word_forward: forward_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
