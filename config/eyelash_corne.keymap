@@ -44,8 +44,18 @@
         compatible = "zmk,combos";
         combo_cut {
             timeout-ms = <50>;
+            key-positions = <30 32>;
+            bindings = <&kp LG(X)>;
+        };
+        combo_copy {
+            timeout-ms = <50>;
             key-positions = <30 31>;
-            bindings = <&kp LGUI &kp X>;
+            bindings = <&kp LG(C)>;
+        };
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp LG(V)>;
         };
     };
 
