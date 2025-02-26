@@ -45,7 +45,7 @@
         combo_cut {
             timeout-ms = <50>;
             key-positions = <30 31>;
-            bindings = <&kp LGUI>, <&kp X>;
+            bindings = <&kp LGUI &kp X>;
         };
     };
 
