@@ -74,7 +74,7 @@
         };
         combo_escape {
             timeout-ms = <50>;
-            key-positions = <9 11>;
+            key-positions = <8 10>;
             bindings = <&kp ESC>;
         };
     };
