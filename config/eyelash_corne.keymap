@@ -62,6 +62,21 @@
             key-positions = <37 38>;
             bindings = <&kp LG(Z)>;
         };
+        combo_backspace {
+            timeout-ms = <50>;
+            key-positions = <9 10>;
+            bindings = <&kp BSPC>;
+        };
+        combo_delete {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp DEL>;
+        };
+        combo_escape {
+            timeout-ms = <50>;
+            key-positions = <9 11>;
+            bindings = <&kp ESC>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
