@@ -135,11 +135,11 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "COLMAK";
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T                              &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &hm LCTRL A  &hm LALT S      &hm LGUI D     &hm LSHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hm LSHIFT J  &hm LGUI K      &hm LALT L    &hm LCTRL SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp B                              &kp UP                &kp J        &kp L  &kp U      &kp Y    &kp SEMI    &kp BSPC
+&kp ESC    &hm LCTRL A  &hm LALT R      &hm LGUI S     &hm LSHIFT T  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &hm LSHIFT N  &hm LGUI E      &hm LALT I    &hm LCTRL O  &kp SQT
+&td0       &kp Z  &kp X      &kp C     &kp D  &kp V       &kp SPACE              &kp DOWN              &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                              &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -170,9 +170,9 @@
         layer_nav {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N7           &kp N8          &kp N9        &kp N4        &trans                                     &mmv MOVE_UP                     &trans           &trans           &trans           &trans           &trans    &trans
-&kp N0  &kp N4           &kp N5          &kp N6        &bt BT_SEL 2  &trans                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &kp N1           &kp N2          &kp N3        &trans        &trans &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+&trans  &trans      &kp N7           &kp N8          &kp N9        &trans                                             &mmv MOVE_UP                     &trans           &trans           &trans           &trans           &trans    &trans
+&trans  &kp N0      &kp N4           &kp N5          &kp N6        &trans                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &trans      &kp N1           &kp N2          &kp N3        &trans        &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                          &trans        &trans        &trans                                                                         &kp INS          &kp DEL          &trans
             >;
             sensor-bindings = <&scroll_encoder>;
@@ -187,6 +187,17 @@
                                 &trans      &trans      &trans                                                                   &trans       &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_qwerty {
+            display-name = "QWERTY";
+            bindings = <
+&kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T                              &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td0       &hm LCTRL A  &hm LALT S      &hm LGUI D     &hm LSHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hm LSHIFT J  &hm LGUI K      &hm LALT L    &hm LCTRL SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                             &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
