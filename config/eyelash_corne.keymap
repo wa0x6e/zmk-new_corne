@@ -94,7 +94,7 @@
     };
 
     macros {
-
+        word_back: back_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
