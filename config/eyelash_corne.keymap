@@ -94,7 +94,7 @@
     };
 
     macros {
-        word_back: back_word {
+
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -112,22 +112,40 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-        line_start: line_start {
+        clear_line: clear_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-                , <&macro_tap &kp LEFT>
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp K>
                 , <&macro_release &kp LGUI>
+                , <&macro_release &kp LSHIFT>
+                , <&macro_press &kp LGUI>
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp ENTER>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LSHIFT>
                 ;
         };
-        line_end: line_end {
+        expand_selection: expand_selection {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-                , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp LCTRL>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp RIGHT>
+                ;
+        };
+        shrink_selection: shrink_selection {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp LCTRL>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LEFT>
                 ;
         };
     };
