@@ -22,6 +22,22 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
+// Define mod-morph with a *single* mod trigger for less repetition.
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2)                            \
+  ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
+                bindings = <BINDING1>, <BINDING2>;)
+
+// Tap: comma | Shift + tap: semicolon | Ctrl + shift + tap: <.
+SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
+SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
+
+// Tap: dot | Shift + tap: colon | Ctrl + shift + tap: >.
+SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
+SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
+
+// Tap: qmark | Shift + tap: excl.
+SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
+
 / {
     behaviors {
         td0: td0 {
@@ -164,7 +180,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp B                              &kp UP                &kp J        &kp L  &kp U      &kp Y    &kp SEMI    &kp BSPC
 &kp ESC    &hm LCTRL A  &hm LALT R      &hm LGUI S     &hm LSHIFT T  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &hm LSHIFT N  &hm LGUI E      &hm LALT I    &hm LCTRL O  &kp SQT
-&td0       &kp Z  &kp X      &kp C     &kp D  &kp V       &kp SPACE              &kp DOWN              &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&td0       &kp Z  &kp X      &kp C     &kp D  &kp V       &kp SPACE              &kp DOWN              &kp K        &kp H  &comma_morph  &kp DOT  &kp FSLH  &kp ESC
                              &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
