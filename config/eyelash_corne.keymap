@@ -96,6 +96,16 @@
             key-positions = <8 10>;
             bindings = <&kp ESC>;
         };
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp ENTER>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <23 25>;
+            bindings = <&kp TAB>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
