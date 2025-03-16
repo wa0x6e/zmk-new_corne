@@ -98,15 +98,15 @@
         };
         combo_enter {
             timeout-ms = <50>;
-            key-positions = <4 5>;
+            key-positions = <3 4>;
             bindings = <&kp ENTER>;
         };
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <3 4>;
+            key-positions = <2 3>;
             bindings = <&kp TAB>;
         };
-    };
+    };          
 
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
