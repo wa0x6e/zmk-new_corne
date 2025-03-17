@@ -186,13 +186,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
+                = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
         };
         scroll_up_n_lines: scroll_up_n_lines {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-               = <&kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP>;
+               = <&kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP>;
         };
     };
 
