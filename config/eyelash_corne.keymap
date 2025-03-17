@@ -186,33 +186,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                , <&macro_press &kp DOWN>
-                ;
+                = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
         };
         scroll_up_n_lines: scroll_up_n_lines {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                , <&macro_press &kp UP>
-                ;
+               = <&kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP>;
         };
     };
 
