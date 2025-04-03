@@ -233,12 +233,12 @@
         };
 
         lower_layer {
-            display-name = "NAV";
+            display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0          &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &msc SCRL_UP    &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &msc SCRL_DOWN  &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &trans           &trans          &trans        &trans        &trans                                    &mmv MOVE_UP                     &trans           &kp N7          &kp N8           &kp N9          &trans           &trans          
+&trans  &trans           &trans          &trans        &trans        &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &kp N4          &kp N5           &kp N6          &kb N0           &trans 
+&trans  &trans           &trans          &trans        &trans        &trans  &kp C_MUTE                        &mmv MOVE_DOWN                   &trans           &kp N1          &kp N2           &kp N3          &trans           &trans
+                                         &trans        &trans        &trans                                                                     &trans           &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -257,7 +257,7 @@
         };
 
         layer_nav {
-            display-name = "NUMBER";
+            display-name = "NAV";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                &mmv MOVE_UP                     &shrink_selection  &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT)  &trans                &trans
 &trans  &none   &trans  &trans  &trans  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &expand_selection  &kp LEFT            &kp DOWN      &kp RIGHT      &scroll_up_n_lines    &kp PG_UP
@@ -269,7 +269,7 @@
         };
 
         layer_fn {
-            display-name = "Fn";
+            display-name = "FN";
             bindings = <
 &studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
