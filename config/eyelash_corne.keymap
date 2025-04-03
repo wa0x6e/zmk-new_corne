@@ -138,30 +138,6 @@
     };
 
     macros {
-        word_back: back_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp LEFT>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        word_forward: forward_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp RIGHT>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         clear_line: clear_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
