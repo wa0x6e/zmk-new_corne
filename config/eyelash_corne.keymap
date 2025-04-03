@@ -90,6 +90,11 @@
             bindings = <&kp LG(Z)>;
         };
 
+        combo_redo {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <2 3>;
+        };
+
         combo_backspace {
             timeout-ms = <50>;
             key-positions = <8 9>;
@@ -118,11 +123,6 @@
             timeout-ms = <50>;
             key-positions = <38 39>;
             bindings = <&kp TAB>;
-        };
-
-        combo_redo {
-            bindings = <&kp LS(LG(Z))>;
-            key-positions = <2 3>;
         };
     };
 
