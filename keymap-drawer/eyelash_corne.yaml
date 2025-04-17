@@ -317,3 +317,5 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [37, 39]
   k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
+- p: [17, 23]
+  k: Sft+Gui+P
