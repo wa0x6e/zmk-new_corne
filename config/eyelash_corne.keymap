@@ -129,6 +129,11 @@
             bindings = <&kp LG(ENTER)>;
             key-positions = <37 39>;
         };
+
+        cmd_palette {
+            bindings = <&kp LS(LG(P))>;
+            key-positions = <17 23>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
