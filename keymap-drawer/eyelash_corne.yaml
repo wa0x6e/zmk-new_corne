@@ -14,7 +14,7 @@ layers:
   - Y
   - {t: '''', s: '"'}
   - {t: '`', s: '~'}
-  - {t: 'Alt+,', s: Alt+<}
+  - {t: Alt+Sft+/, s: 'Alt+Sft+?'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: LGUI}
