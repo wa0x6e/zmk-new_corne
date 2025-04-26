@@ -176,10 +176,10 @@
         default_layer {
             display-name = "COLMAK";
             bindings = <
-&kp ESCAPE     &kp Q        &kp W       &kp F                           &kp P         &kp B                                      &kp UP                &kp J            &kp L           &kp U             &kp Y       &kp SINGLE_QUOTE  &kp GRAVE
-&kp LA(COMMA)  &hm LCTRL A  &hm LALT R  &hm LGUI S                      &hm LSHIFT T  &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp M            &hm LSHIFT N    &hm LGUI E        &hm LALT I  &hm LCTRL O       &kp MINUS
-&td0           &kp Z        &kp X       &kp C                           &kp D         &kp V        &kp K_PLAY_PAUSE              &kp DOWN              &kp K            &kp H           &comma_semicolon  &dot_colon  &excl_quest       &mt SLASH EQUAL
-                                        &sk LS(LA(LC(LG(LEFT_SHIFT))))  &sl 2         &lt 1 SPACE                                                      &lt 3 BACKSPACE  &kp LEFT_SHIFT  &sl 4
+&kp ESCAPE         &kp Q        &kp W       &kp F                           &kp P         &kp B                                      &kp UP                &kp J            &kp L           &kp U             &kp Y       &kp SINGLE_QUOTE  &kp GRAVE
+&kp LA(LS(SLASH))  &hm LCTRL A  &hm LALT R  &hm LGUI S                      &hm LSHIFT T  &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp M            &hm LSHIFT N    &hm LGUI E        &hm LALT I  &hm LCTRL O       &kp MINUS
+&td0               &kp Z        &kp X       &kp C                           &kp D         &kp V        &kp K_PLAY_PAUSE              &kp DOWN              &kp K            &kp H           &comma_semicolon  &dot_colon  &excl_quest       &mt SLASH EQUAL
+                                            &sk LS(LA(LC(LG(LEFT_SHIFT))))  &sl 2         &lt 1 SPACE                                                      &lt 3 BACKSPACE  &kp LEFT_SHIFT  &sl 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
