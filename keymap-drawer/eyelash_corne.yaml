@@ -29,7 +29,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '-', s: _}
-  - '&td0'
+  - Alt+Sft+$$mdi:keyboard-space$$
   - Z
   - X
   - C
