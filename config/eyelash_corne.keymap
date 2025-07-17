@@ -137,7 +137,7 @@
 
         combo_escape_2 {
             bindings = <&kp ESCAPE>;
-            key-positions = <31 38>;
+            key-positions = <14 26>;
         };
     };
 
