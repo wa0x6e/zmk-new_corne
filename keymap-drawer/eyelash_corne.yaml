@@ -368,5 +368,5 @@ combos:
   k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
 - p: [17, 23]
   k: Sft+Gui+P
-- p: [31, 38]
+- p: [14, 26]
   k: $$mdi:keyboard-esc$$
