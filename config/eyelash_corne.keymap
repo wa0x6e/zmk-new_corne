@@ -134,6 +134,11 @@
             bindings = <&kp LS(LG(P))>;
             key-positions = <17 23>;
         };
+
+        combo_escape_2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 24>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
