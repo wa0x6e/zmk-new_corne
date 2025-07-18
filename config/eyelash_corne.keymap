@@ -130,14 +130,14 @@
             key-positions = <37 39>;
         };
 
-        cmd_palette {
-            bindings = <&kp LS(LG(P))>;
-            key-positions = <17 23>;
-        };
-
         combo_escape_2 {
             bindings = <&kp ESCAPE>;
             key-positions = <14 26>;
+        };
+
+        vim_command {
+            bindings = <&vim_command>;
+            key-positions = <17 23>;
         };
     };
 
@@ -172,6 +172,13 @@
                 <&kp LGUI>,
                 <&macro_release>,
                 <&kp LSHIFT>;
+        };
+
+        vim_command: vim_command {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON>;
+            label = "VIM_COMMAND";
         };
     };
 
