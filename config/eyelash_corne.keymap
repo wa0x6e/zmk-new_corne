@@ -95,12 +95,6 @@
             key-positions = <2 3>;
         };
 
-        combo_backspace {
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&kp BSPC>;
-        };
-
         combo_delete {
             timeout-ms = <50>;
             key-positions = <9 10>;
