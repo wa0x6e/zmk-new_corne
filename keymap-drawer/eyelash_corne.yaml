@@ -354,8 +354,6 @@ combos:
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
 - p: [2, 3]
   k: Sft+Gui+Z
-- p: [8, 9]
-  k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
 - p: [8, 10]
