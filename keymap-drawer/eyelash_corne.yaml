@@ -364,7 +364,7 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [37, 39]
   k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
-- p: [14, 26]
+- p: [44, 45]
   k: $$mdi:keyboard-esc$$
 - p: [17, 23]
   k: '&vim_command'
