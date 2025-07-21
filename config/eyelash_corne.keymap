@@ -126,7 +126,7 @@
 
         combo_escape_2 {
             bindings = <&kp ESCAPE>;
-            key-positions = <14 26>;
+            key-positions = <44 45>;
         };
 
         vim_command {
