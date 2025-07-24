@@ -150,24 +150,6 @@
     };
 
     macros {
-        clear_line: clear_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp K>,
-                <&macro_tap>,
-                <&kp ENTER>,
-                <&macro_release>,
-                <&kp LGUI>,
-                <&macro_release>,
-                <&kp LSHIFT>;
-        };
-
         vim_command: vim_command {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -219,7 +201,7 @@
             display-name = "NAV";
             bindings = <
 &trans  &trans  &trans         &kp LG(LS(ENTER))  &trans                 &trans                                &mmv MOVE_UP                     &trans    &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT)  &trans          &trans
-&trans  &none   &kp LG(LS(K))  &clear_line        &kp LS(LG(LC(RIGHT)))  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME  &kp LEFT            &kp DOWN      &kp RIGHT      &msc SCRL_UP    &kp PG_UP
+&trans  &none   &kp LG(LS(K))  &trans             &kp LS(LG(LC(RIGHT)))  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME  &kp LEFT            &kp DOWN      &kp RIGHT      &msc SCRL_UP    &kp PG_UP
 &trans  &trans  &trans         &kp LG(ENTER)      &kp LS(LC(LG(LEFT)))   &trans  &kp K_MUTE                    &mmv MOVE_DOWN                   &kp END   &kp LA(LEFT)        &none         &kp LA(RIGHT)  &msc SCRL_DOWN  &kp PG_DN
                                &trans             &trans                 &trans                                                                 &trans    &trans              &trans
             >;
