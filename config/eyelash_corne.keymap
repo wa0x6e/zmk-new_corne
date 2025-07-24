@@ -200,10 +200,10 @@
         layer_nav {
             display-name = "NAV";
             bindings = <
-&trans  &trans  &trans         &kp LG(LS(ENTER))  &trans                 &trans                                &mmv MOVE_UP                     &trans    &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT)  &trans          &trans
-&trans  &none   &kp LG(LS(K))  &trans             &kp LS(LG(LC(RIGHT)))  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME  &kp LEFT            &kp DOWN      &kp RIGHT      &msc SCRL_UP    &kp PG_UP
-&trans  &trans  &trans         &kp LG(ENTER)      &kp LS(LC(LG(LEFT)))   &trans  &kp K_MUTE                    &mmv MOVE_DOWN                   &kp END   &kp LA(LEFT)        &none         &kp LA(RIGHT)  &msc SCRL_DOWN  &kp PG_DN
-                               &trans             &trans                 &trans                                                                 &trans    &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                &mmv MOVE_UP                     &trans    &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT)  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME  &kp LEFT            &kp DOWN      &kp RIGHT      &msc SCRL_UP    &kp PG_UP
+&trans  &trans  &trans  &trans  &trans  &trans  &kp K_MUTE                    &mmv MOVE_DOWN                   &kp END   &kp LA(LEFT)        &none         &kp LA(RIGHT)  &msc SCRL_DOWN  &kp PG_DN
+                        &trans  &trans  &trans                                                                 &trans    &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
