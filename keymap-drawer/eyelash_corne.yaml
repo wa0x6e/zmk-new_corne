@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   COLMAK:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - Q
   - W
   - F
@@ -14,7 +14,7 @@ layers:
   - Y
   - {t: '''', s: '"'}
   - {t: '`', s: '~'}
-  - {t: Alt+Sft+/, s: 'Alt+Sft+?'}
+  - Alt+Sft+$$mdi:keyboard-space$$
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: LGUI}
@@ -29,7 +29,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '-', s: _}
-  - Alt+Sft+$$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - Z
   - X
   - C
