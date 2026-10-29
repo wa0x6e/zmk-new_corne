@@ -70,69 +70,87 @@
         combo_cut {
             timeout-ms = <50>;
             key-positions = <30 32>;
+            layers = <0 2 3 4 5 6 7>;
             bindings = <&kp LG(X)>;
         };
 
         combo_copy {
             timeout-ms = <50>;
             key-positions = <30 31>;
+            layers = <0 2 3 4 5 6 7>;
             bindings = <&kp LG(C)>;
         };
 
         combo_paste {
             timeout-ms = <50>;
             key-positions = <31 32>;
+            layers = <0 2 3 4 5 6 7>;
             bindings = <&kp LG(V)>;
         };
 
         combo_undo {
             timeout-ms = <50>;
             key-positions = <3 4>;
+            layers = <0 2 3 4 5 6 7>;
             bindings = <&kp LG(Z)>;
         };
 
         combo_redo {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <2 3>;
+            layers = <0 2 3 4 5 6 7>;
         };
 
         combo_delete {
             timeout-ms = <50>;
             key-positions = <9 10>;
+            layers = <0 2 3 4 5 6 7>;
             bindings = <&kp DEL>;
         };
 
         combo_escape {
             timeout-ms = <50>;
             key-positions = <8 10>;
+            layers = <0 2 3 4 5 6 7>;
             bindings = <&kp ESC>;
         };
 
         combo_enter {
             timeout-ms = <50>;
             key-positions = <37 38>;
+            layers = <0 2 3 4 5 6 7>;
             bindings = <&kp ENTER>;
         };
 
         combo_tab {
             timeout-ms = <50>;
             key-positions = <38 39>;
+            layers = <0 2 3 4 5 6 7>;
             bindings = <&kp TAB>;
         };
 
         combo_cmd_enter {
             bindings = <&kp LG(ENTER)>;
             key-positions = <37 39>;
+            layers = <0 2 3 4 5 6 7>;
         };
 
         combo_escape_2 {
             bindings = <&kp ESCAPE>;
             key-positions = <44 45>;
+            layers = <0 2 3 4 5 6 7>;
         };
 
         vim_command {
             bindings = <&vim_command>;
             key-positions = <17 23>;
+            layers = <0 2 3 4 5 6 7>;
+        };
+
+        combo_game {
+            timeout-ms = <50>;
+            key-positions = <43 47>;
+            bindings = <&tog 1>;
         };
     };
 
@@ -168,7 +186,19 @@
 &trans             &kp Q        &kp W       &kp F                           &kp P         &kp B                                      &kp UP                &kp J            &kp L           &kp U             &kp Y       &kp SINGLE_QUOTE  &kp GRAVE
 &kp LA(LS(SPACE))  &hm LCTRL A  &hm LALT R  &hm LGUI S                      &hm LSHIFT T  &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp M            &hm LSHIFT N    &hm LGUI E        &hm LALT I  &hm LCTRL O       &kp MINUS
 &trans             &kp Z        &kp X       &kp C                           &kp D         &kp V        &kp K_PLAY_PAUSE              &kp DOWN              &kp K            &kp H           &comma_semicolon  &dot_colon  &excl_quest       &mt SLASH EQUAL
-                                            &sk LS(LA(LC(LG(LEFT_SHIFT))))  &sl 2         &lt 1 SPACE                                                      &lt 3 BACKSPACE  &sk LEFT_SHIFT  &sl 4
+                                            &sk LS(LA(LC(LG(LEFT_SHIFT))))  &sl 3         &lt 2 SPACE                                                      &lt 4 BACKSPACE  &sk LEFT_SHIFT  &sl 5
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        layer_game {
+            display-name = "GAME";
+            bindings = <
+&kp ESC            &kp Q        &kp W       &kp F                           &kp P         &kp B                                      &kp UP                &kp J            &kp L           &kp U             &kp Y       &kp SINGLE_QUOTE  &kp GRAVE
+&kp TAB            &kp A        &kp R       &kp S                           &kp T         &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp M            &kp N           &kp E             &kp I       &kp O             &kp MINUS
+&trans             &kp Z        &kp X       &kp C                           &kp D         &kp V        &kp K_PLAY_PAUSE              &kp DOWN              &kp K            &kp H           &comma_semicolon  &dot_colon  &excl_quest       &mt SLASH EQUAL
+                                            &sk LS(LA(LC(LG(LEFT_SHIFT))))  &sl 3         &lt 2 SPACE                                                      &lt 4 BACKSPACE  &sk LEFT_SHIFT  &sl 5
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -250,8 +280,8 @@
         compatible = "zmk,conditional-layers";
 
         Mouse {
-            if-layers = <1 3>;
-            then-layer = <6>;
+            if-layers = <2 4>;
+            then-layer = <7>;
         };
     };
 };
