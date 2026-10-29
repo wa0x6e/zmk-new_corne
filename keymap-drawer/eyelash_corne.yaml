@@ -49,6 +49,55 @@ layers:
   - {t: '$$mdi:backspace$$', h: NAV}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: FN, h: '$$mdi:gesture-tap-hold$$'}
+  GAME:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - $$mdi:arrow-up-bold$$
+  - J
+  - L
+  - U
+  - Y
+  - {t: '''', s: '"'}
+  - {t: '`', s: '~'}
+  - $$mdi:keyboard-tab$$
+  - A
+  - R
+  - S
+  - T
+  - G
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - M
+  - N
+  - E
+  - I
+  - O
+  - {t: '-', s: _}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - PLAY PAUSE
+  - $$mdi:arrow-down-bold$$
+  - K
+  - H
+  - {t: ',', s: ;}
+  - {t: ., s: Sft+;}
+  - {t: Sft+/, s: Sft+1}
+  - {t: '=', h: /, s: +}
+  - {t: 'Hyper+$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: SYMBOL, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:backspace$$', h: NAV}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: FN, h: '$$mdi:gesture-tap-hold$$'}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -346,25 +395,39 @@ layers:
 combos:
 - p: [30, 32]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [30, 31]
   k: {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [31, 32]
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [3, 4]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [2, 3]
   k: Sft+Gui+Z
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [8, 10]
   k: $$mdi:keyboard-esc$$
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [37, 38]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [38, 39]
   k: $$mdi:keyboard-tab$$
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [37, 39]
   k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [44, 45]
   k: $$mdi:keyboard-esc$$
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
 - p: [17, 23]
   k: '&vim_command'
+  l: [COLMAK, NUMBER, SYMBOL, NAV, FN, QWERTY, MOUSE]
+- p: [43, 47]
+  k: {t: GAME, h: toggle}
